@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="company">
+  <head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+  <link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header">
+      <div class="header_in section_in"><a class="header_logo" href="#"><img class="header_logo__img" src="images/logo.svg" alt="logo"></a>
+        <div class="nav">
+          <div class="nav__block_wrap">
+            <div class="nav__block">
+              <ul class="main_menu__list ">
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Collezioni</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Prodotti</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Divani</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Poltroncine</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Contenitori giorno</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Tavoli</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Sedie</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Tavolini</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Letti</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Complementi notte</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Panchette e Pouf</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Consolle</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Accessori</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Illuminazione</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Ufficio</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Vedi tutti</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Vedi tutti</a></div>
+                  </div>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Designer</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Lifestyle</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Contract</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Servizi</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Progetti</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Residenziale</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Retail</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Hospitality</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Spazi pubblici</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Uffici</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Vedi tutti</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Vedi tutti</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__block">
+              <ul class="main_menu__list ">
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Azienda</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Know-how</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Sostenibilità</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Storia</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Turri Design</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Turri Design</a></div>
+                  </div>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">News</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Store</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Contatti </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav__bottom">
+            <div class="nav__menu_wrap">
+              <ul class="nav__menu">
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Download</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Press Area</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Richiesta informazioni</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link nav__menu_link--list_mod js-mobile-nav-link" href="#">Italiano</a>
+                  <div class="nav__menu_submenu">
+                    <div class="nav__menu_submenu_item"><a class="nav__menu_submenu_link" href="#">English</a></div>
+                    <div class="nav__menu_submenu_item"><a class="nav__menu_submenu_link" href="#">French</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="nav__social">
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_facebook icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_instagram icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_pinterest icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_youtube icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_links">
+          <div class="header_links__item"><a class="header_links__el header_links__el--favourite_mod" href="#">
+              <svg class="icon icon_favourite icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#favourite"></use>
+              </svg></a></div>
+          <div class="header_links__item"><a class="header_links__el js-search-trigger" href="#">
+              <svg class="icon icon_search icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#search"></use>
+              </svg></a></div>
+        </div>
+        <div class="menu_trigger js-menu-trigger"><span class="menu_trigger_decor"></span></div>
+        <div class="header_search js-header-search">
+          <form class="header_search__form" action="">
+            <div class="form_input">
+              <div class="form_input__field">
+                <input class="form_input__element" type="" id="header_search" placeholder="Cerca" value="">
+              </div>
+            </div>
+            <button class="header_search__submit js-search-close">
+              <svg class="icon icon_close icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__in">
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="#">Home</a>
+                <div class="breadcrumbs_icon">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="breadcrumbs_item"><span class="breadcrumbs_link breadcrumbs_link--current_mod">Azienda</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="section hero_v2">
+          <div class="section_in hero_v2__in">
+            <div class="rich_text">
+              <h1 class="rich_text__title">Azienda</h1>
+              <div class="rich_text__text">
+                <p>Nei nostri uffici, nei nostri impianti di produzione, lavoriamo ogni giorno per “costruire” il bello. È questo lo spirito con cui scegliamo i materiali e finiamo ogni singolo componente dei nostri arredamenti. Ma non basta. Le macchine e gli impianti più sofisticati non potrebbero mai raggiungere l’unicità e la qualità Turri se non ci fosse ciò che per noi è il più importante artefice del risultato finale: il lavoro manuale, con il quale i nostri uomini – spesso veri e propri artisti – sanno portare a termine ogni singolo pezzo. Solo cosi si può raggiungere il massimo della forma, della qualità, del prestigio. Solo così un mobile può portare la firma Turri.</p>
+              </div>
+            </div>
+          </div>
+          <picture class="hero_v2__pic">
+            <source media="(min-width: 640px)" srcset="images/hero/hero_10.jpg.webp" type="image/webp">
+            <source media="(min-width: 640px)" srcset="images/hero/hero_10.jpg" type="image/jpeg">
+            <source media="(max-width: 639px)" srcset="images/hero/hero_10_mob.jpg.webp" type="image/webp">
+            <source media="(max-width: 639px)" srcset="images/hero/hero_10_mob.jpg" type="image/jpeg"><img class="hero_v2__img" src="images/hero/hero_10.jpg" alt=" " loading="eager" data-speed="auto">
+          </picture>
+          <div class="section_in">
+            <div class="rich_text rich_text--style_2_mod">
+              <div class="rich_text__text">
+                <p>Sin dal 1925, quando dalla bottega di Pietro Turri uscirono i primi mobili, subito si fecero notare per la loro qualità. Tre parole, allora come oggi, riassumono la filosofia Turri: originale, autentico, unico. Èil valore che si ritrova in ogni nostro prodotto: dal singolo mobile all’arredamento più completo. Ci guida l’amore e il rispetto della tradizione, che ci impone di lavorare ad un livello di qualità senza compromessi e senza confronti, anche quando ne proponiamo interpretazioni moderne e innovative.</p>
+                <p>Da questi presupposti, è nato lo stile Turri, quel modo di concepire il bello nell’arredamento che ci colloca tra i nomi di riferimento del “Made in Italy” e che il mondo ci riconosce. La nostra mission è portare l’arte di vivere il bello in ogni ambiente, chi cerca il bello troverà sempre in Turri una comprensione profonda delle proprie aspirazioni.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section news">
+          <div class="section_in">
+            <div class="news__body">
+              <ul class="news__list">
+                <li class="news__item">
+                  <div class="section_head section_head--font_mod">
+                    <h3 class="section_head__title"><a class="section_head__title_link" href="#">Know-how</a></h3><a class="section_head__link" href="#">Scopri di più</a>
+                  </div>
+                  <div class="news__item_text">
+                    <p>Donec ac tortor semper, tincidunt nisi id, auctor augue. Integer ac nibh nibh proin consectetur interdum fermentum. Ut fringilla eros dignissim eros aliquet dignissim fusce quis tellus at sapien egestas commodo cras risus urna, pretium at suscipit quis,.</p>
+                  </div><a class="news__item_link" href="#">
+                    <picture class="news__item_img_in">
+                      <source media="(max-width: 639px)" srcset="images/news/news_9.jpg.webp" type="image/webp">
+                      <source media="(max-width: 639px)" srcset="images/news/news_9.jpg" type="image/jpeg"><img class="news__item_img" src="images/news/news_9.jpg" alt=" " loading="eager">
+                    </picture></a>
+                </li>
+                <li class="news__item">
+                  <div class="section_head section_head--font_mod">
+                    <h3 class="section_head__title"><a class="section_head__title_link" href="#">Sostenibilità</a></h3><a class="section_head__link" href="#">Scopri di più</a>
+                  </div>
+                  <div class="news__item_text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>
+                  </div><a class="news__item_link" href="#">
+                    <picture class="news__item_img_in">
+                      <source media="(max-width: 639px)" srcset="images/news/news_8.jpg.webp" type="image/webp">
+                      <source media="(max-width: 639px)" srcset="images/news/news_8.jpg" type="image/jpeg"><img class="news__item_img" src="images/news/news_8.jpg" alt=" " loading="eager">
+                    </picture></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section storia">
+          <div class="section_in">
+            <div class="section_head section_head--sm_mod">
+              <h3 class="section_head__title">Storia</h3><a class="section_head__link" href="#">Scopri di più</a>
+            </div>
+            <div class="rich_text">
+              <div class="rich_text__text">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="storia__wrap">
+              <picture class="storia__pic">
+                <source media="(max-width: 639px)" srcset="images/storia.jpg.webp" type="image/webp">
+                <source media="(max-width: 639px)" srcset="images/storia.jpg" type="image/jpeg"><img class="storia__img" src="images/storia.jpg" alt=" " loading="eager">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="section news news--slider_mod">
+          <div class="section_in">
+            <div class="section_head section_head--font_mod">
+              <h3 class="section_head__title">News</h3><a class="section_head__link" href="#">Tutte le news</a>
+            </div>
+            <div class="news__body">
+              <div class="mobile_slider js-mobile-slider-wrap">
+                <ul class="news__list js-news-slider">
+                  <li class="news__item">
+                    <div class="news__item_data">25/11/2022, Premi</div><a class="news__item_link" href="#">
+                      <picture class="news__item_img_in">
+                        <source media="(max-width: 639px)" srcset="images/news/news_1.jpg.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/news/news_1.jpg" type="image/jpeg"><img class="news__item_img" src="images/news/news_1.jpg" alt=" " loading="eager">
+                      </picture></a>
+                    <h3 class="news__item_title"><a class="news__item_title_link" href="#">Archiproducts Design Award</a></h3>
+                    <div class="news__item_text">
+                      <p>Archiproducts Design Award “The perfection lies precisely in its imperfection” Turri is honored to announce that the Azul Sofa has just received a prestigious ADA award in the Furniture category.</p>
+                    </div>
+                  </li>
+                  <li class="news__item">
+                    <div class="news__item_data">23/07/2022, Storie</div><a class="news__item_link" href="#">
+                      <picture class="news__item_img_in">
+                        <source media="(max-width: 639px)" srcset="images/news/news_2.jpg.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/news/news_2.jpg" type="image/jpeg"><img class="news__item_img" src="images/news/news_2.jpg" alt=" " loading="eager">
+                      </picture></a>
+                    <h3 class="news__item_title"><a class="news__item_title_link" href="#">Air Decor: i nuovi purificatori d’aria</a></h3>
+                    <div class="news__item_text">
+                      <p>Abitare bene e comfort abitativo non dipendono solo dalle dimensioni, dalla funzionalità o dall’armonia degli spazi in cui si vive, ma anche dall’atmosfera che vi si respira.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section news">
+          <div class="section_in">
+            <div class="section_head section_head--font_mod">
+              <h3 class="section_head__title">Scopri il brand</h3>
+            </div>
+            <div class="news__body">
+              <ul class="news__list">
+                <li class="news__item"><a class="news__item_link" href="#">
+                    <picture class="news__item_img_in">
+                      <source media="(max-width: 639px)" srcset="images/news/news_3.jpg.webp" type="image/webp">
+                      <source media="(max-width: 639px)" srcset="images/news/news_3.jpg" type="image/jpeg"><img class="news__item_img" src="images/news/news_3.jpg" alt=" " loading="eager">
+                    </picture></a>
+                  <div class="news__item_wrap">
+                    <h3 class="news__item_title"><a class="news__item_title_link" href="#">Turri</a></h3><a class="news__item_descr" href="#">Scopri</a>
+                  </div>
+                  <div class="news__item_text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.</p>
+                  </div>
+                </li>
+                <li class="news__item"><a class="news__item_link" href="#">
+                    <picture class="news__item_img_in">
+                      <source media="(max-width: 639px)" srcset="images/news/news_4.jpg.webp" type="image/webp">
+                      <source media="(max-width: 639px)" srcset="images/news/news_4.jpg" type="image/jpeg"><img class="news__item_img" src="images/news/news_4.jpg" alt=" " loading="eager">
+                    </picture></a>
+                  <div class="news__item_wrap">
+                    <h3 class="news__item_title"><a class="news__item_title_link" href="#">Turri Design</a></h3><a class="news__item_descr" href="#">Scopri</a>
+                  </div>
+                  <div class="news__item_text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__in">
+          <div class="footer__wrap">
+            <div class="footer__logo"><a class="footer_menu__link" href="#">Turri Srl</a></div>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <div class="footer_menu js-footer-select">
+                    <h4 class="footer_menu__title js-footer-title">Sede e uffici
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list">
+                        <li class="footer_menu__item">
+                          <div class="footer_menu__adress">Via U. Foscolo 6<br>22060 Carugo (CO) <br>Italia</div>
+                        </li>
+                        <li class="footer_menu__item"><a class="footer_menu__link" href="tel:39031760111">T +39 031.760111</a></li>
+                        <li class="footer_menu__item"><a class="footer_menu__link" href="mailto:info@turri.it">info@turri.it</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <div class="footer_menu js-footer-select">
+                    <h4 class="footer_menu__title js-footer-title">Unità produttiva
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list">
+                        <li class="footer_menu__item">
+                          <div class="footer_menu__adress">Via 2 Giugno<br> 20836 Briosco (MB)) <br>Italia</div>
+                        </li>
+                        <li class="footer_menu__item footer_menu__item--mt_mod"><a class="footer_menu__link" href="#">Google Maps</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <ul class="footer_menu__list ">
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Download</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Press Area</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Richiesta informazioni</a>
+                    </li>
+                  </ul>
+                  <ul class="footer_menu__list ">
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="cookie-policy.html">Cookie policy</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Privacy policy</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <div class="footer_menu footer_menu--desctop_mod">
+                    <ul class="footer_menu__list ">
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Italiano</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Inglese</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Spagnolo</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Francese</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Tedesco</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Russo</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Cinese</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer_menu footer_menu--mob_mod js-footer-select">
+                    <h4 class="footer_menu__title footer_menu__title--mob_mod js-footer-title">Italiano
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list ">
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Inglese</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Spagnolo</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Francese</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Tedesco</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Russo</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Cinese</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__social">
+              <ul class="footer__social_list">
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_facebook icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_instagram icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_pinterest icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_youtube icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__info">
+              <h6 class="footer__info__title">Newsletter</h6>
+              <div class="footer__info__text">
+                <p>Ricevi settimanalmente le ultime notizie e tendenze.</p>
+              </div>
+              <form class="footer__form">
+                <div class="footer__form_input">
+                  <div class="form_input">
+                    <div class="form_input__field">
+                      <input class="form_input_email" type="email" id="footer_email" placeholder="Email *" name="footer_email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__form_in">
+                  <div class="footer__form_checkbox">
+                    <div class="form_checkbox">
+                      <label class="form_checkbox__block">
+                        <input class="form_checkbox__element" type="checkbox"><span class="form_checkbox__label">Ho letto e acceto la Politica sulla privacy.</span>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="footer__form__btn btn_v3" type="submit" aria-label="email">Invia</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2022 Turri Srl – C.F./P.IVA 03084350135</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button class="fixed_btn js-fixed-email-btn fixed_btn--desktop_mod" type="button" data-popup-trigger="contact_info_popup"><span class="fixed_btn__icon">
+        <svg class="icon icon_mail icon--size_mod">
+          <use xlink:href="images/sprite/sprite.svg#mail"></use>
+        </svg></span><span class="fixed_btn__text">Richiedi info</span></button>
+    <div class="popup js-popup popup--form_mod" data-popup-id="contact_info_popup">
+      <div class="popup__in js-popup-in">
+        <button class="popup__close js-popup-close" type="button" aria-label="close"></button>
+        <div class="popup__head"> 
+          <h3 class="popup__title">Richiesta informazioni</h3>
+        </div>
+        <form class="contact_form js-contact-form" action="#" data-form-modal="contact_info_thanks">
+          <ul class="contact_form__inputs_list">
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="contact_form_field">
+                  <input class="contact_form_input" type="text" id="contact_form_name" placeholder="Nome e cognome *" name="name" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_agency" placeholder="Azienda *" name="agency" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="tel" id="contact_form_tel" placeholder="Recapito telefonico *" name="telephone" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_select">
+                <div class="form_select__field">
+                  <select class="js-select-element" id="contact_form_nation" placeholder="Nazione" name="nation">
+                    <option value="Placeholder">Nazione</option>
+                    <option value="Item 1">item1</option>
+                    <option value="Item 2">item2</option>
+                    <option value="Item 3">item3</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_city" placeholder="Città *" name="city" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="email" id="contact_form_email" placeholder="Email *" name="email" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_select">
+                <div class="form_select__field">
+                  <select class="js-select-element" id="contact_form_usertype" placeholder="Tipologia di utente *" name="object" required>
+                    <option value="Placeholder">Tipologia di utente *</option>
+                    <option value="Item 1">item1</option>
+                    <option value="Item 2">item2</option>
+                    <option value="Item 3">item3</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_object" placeholder="Oggetto" name="object">
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_textarea">
+                <div class="form_textarea__field">
+                  <textarea class="form_textarea__element" placeholder="Messaggio" name="message"></textarea>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="contact_form__checkboxes">
+            <li class="contact_form__checkboxes_item">
+              <div class="form_checkbox">
+                <label class="form_checkbox__block">
+                  <input class="form_checkbox__element" type="checkbox" name="contact_form_privacy_btns"><span class="contact_form__checkbox_label_decor"></span><span class="contact_form__checkbox_label">Dichiaro di aver preso visione dell’Informativa Privacy Turri srl ai sensi dell’art. 13 del Regolamento (EU) 2016/679 (GDPR) *</span>
+                </label>
+              </div>
+            </li>
+            <li class="contact_form__checkboxes_item">
+              <div class="form_checkbox">
+                <label class="form_checkbox__block">
+                  <input class="form_checkbox__element" type="checkbox" name="contact_form_privacy_btns"><span class="contact_form__checkbox_label_decor"></span><span class="contact_form__checkbox_label">Autorizzo il trattamento dei miei dati personali per la finalità ricezione di newsletter e finalità di marketing commerciale</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <div class="contact_form__descr">I dati contrassegnati da * sono obbligatori per poter inoltrare la richiesta di informazioni</div>
+          <div class="contact_form__btn_block">
+            <button class="contact_form__btn btn_v2" type="submit">Invia la tua richiesta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup-id="contact_info_thanks">
+      <div class="popup__in js-popup-in">
+        <button class="popup__close js-popup-close" type="button" aria-label="close"></button>
+        <div class="popup__head"> 
+          <h3 class="popup__title">Grazie per averci contattato</h3>
+        </div>
+        <div class="popup__text_content">
+          <p>La tua richiesta è stata inoltrata correttamente e sarà presa in carico il prima possibile.</p>
+          <p>Per continuare la navigazione, clicca sul pulsante chiudi o ritorna alla home.</p>
+        </div>
+        <div class="popup__btn_block"><a class="popup__btn btn_v2" href="index.html">Torna alla home</a></div>
+      </div>
+    </div>
+  <script defer src="js/app.js"></script></body>
+</html>

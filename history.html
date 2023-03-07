@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="history">
+  <head>
+    <meta charset="UTF-8">
+    <title>History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+  <link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header">
+      <div class="header_in section_in"><a class="header_logo" href="#"><img class="header_logo__img" src="images/logo.svg" alt="logo"></a>
+        <div class="nav">
+          <div class="nav__block_wrap">
+            <div class="nav__block">
+              <ul class="main_menu__list ">
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Collezioni</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Prodotti</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Divani</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Poltroncine</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Contenitori giorno</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Tavoli</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Sedie</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Tavolini</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Letti</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Complementi notte</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Panchette e Pouf</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Consolle</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Accessori</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Illuminazione</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Ufficio</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Vedi tutti</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Vedi tutti</a></div>
+                  </div>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Designer</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Lifestyle</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Contract</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Servizi</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Progetti</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Residenziale</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Retail</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Hospitality</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Spazi pubblici</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Uffici</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Vedi tutti</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Vedi tutti</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__block">
+              <ul class="main_menu__list ">
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Azienda</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Know-how</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Sostenibilità</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Storia</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Turri Design</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Turri Design</a></div>
+                  </div>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">News</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Store</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Contatti </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav__bottom">
+            <div class="nav__menu_wrap">
+              <ul class="nav__menu">
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Download</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Press Area</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Richiesta informazioni</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link nav__menu_link--list_mod js-mobile-nav-link" href="#">Italiano</a>
+                  <div class="nav__menu_submenu">
+                    <div class="nav__menu_submenu_item"><a class="nav__menu_submenu_link" href="#">English</a></div>
+                    <div class="nav__menu_submenu_item"><a class="nav__menu_submenu_link" href="#">French</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="nav__social">
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_facebook icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_instagram icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_pinterest icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_youtube icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_links">
+          <div class="header_links__item"><a class="header_links__el header_links__el--favourite_mod" href="#">
+              <svg class="icon icon_favourite icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#favourite"></use>
+              </svg></a></div>
+          <div class="header_links__item"><a class="header_links__el js-search-trigger" href="#">
+              <svg class="icon icon_search icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#search"></use>
+              </svg></a></div>
+        </div>
+        <div class="menu_trigger js-menu-trigger"><span class="menu_trigger_decor"></span></div>
+        <div class="header_search js-header-search">
+          <form class="header_search__form" action="">
+            <div class="form_input">
+              <div class="form_input__field">
+                <input class="form_input__element" type="" id="header_search" placeholder="Cerca" value="">
+              </div>
+            </div>
+            <button class="header_search__submit js-search-close">
+              <svg class="icon icon_close icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__in">
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="#">Home</a>
+                <div class="breadcrumbs_icon">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="#">Azienda</a>
+                <div class="breadcrumbs_icon">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="breadcrumbs_item"><span class="breadcrumbs_link breadcrumbs_link--current_mod">Storia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="section history_main">
+          <div class="section_in">
+                    <div class="rich_text">
+                      <h1 class="rich_text__title">Storia</h1>
+                      <div class="rich_text__text">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stusam et justo duo dolores et ea rebum.</p>
+                      </div>
+                    </div>
+            <div class="history_main__list">
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">1925</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <picture class="history_main__pic">
+                        <source srcset="images/history/1.jpg.webp" type="image/webp">
+                        <source srcset="images/history/1.jpg" type="image/jpeg"><img class="history_main__img" src="images/history/1.jpg" alt=" " loading="eager">
+                      </picture>
+                      <div class="history_main__text">
+                        <p>Nata da un’intuizione di Pietro Turri, l’azienda è stata fondata nel 1925 ed è diventata, in meno di mezzo secolo, leader nel settore degli arredi da interno. Il suo crescente successo è dovuto al suo preciso posizionamento nel mercato. Turri propone arredamento classico e moderno, una tradizione e una filosofia. Ogni singolo elemento d’arredo prodotto, dalla prima cassettiera del 1925 fino alla produzione di oggi, riassume in sé tre semplici concetti: originalità, autenticità e unicità.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">1952</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <div class="history_main__text">
+                        <p>Espositore sin dalla prima edizione del Salone del Mobile nel 1961, grazie ai suoi arredi di alto posizionamento, Turri si afferma sul mercato italiano prima e su quello europeo poi. Un nuovo impianto produttivo segna il passaggio dalla bottega paterna, all’inizio di un’avventura dal perimetro sempre più internazionale. La terza generazione subentra intorno alla fine degli anni ’70 e comprenderà in breve tempo l’importanza di potenziare le esportazioni, rendendo l’Azienda un punto di riferimento per l’arredamento di lusso ricercato, anche fuori dai confini nazionali.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">1975</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <picture class="history_main__pic">
+                        <source srcset="images/history/2.jpg.webp" type="image/webp">
+                        <source srcset="images/history/2.jpg" type="image/jpeg"><img class="history_main__img" src="images/history/2.jpg" alt=" " loading="eager">
+                      </picture>
+                      <div class="history_main__text">
+                        <p>Nel 1975, grazie al positivo riscontro dei mercati e alla crescita economica dell’azienda in termini di fatturato, Turri investe in due unità produttive di 18.000 metri quadri con 120 persone all’interno del proprio organico, nella città di Carugo, il cuore della “Brianza del mobile”. C’è una forte correlazione tra il successo della produzione Turri e la sua apertura a livello internazionale, la crescita dell’interesse dei paesi extraeuropei verso i prodotti Turri ha stimolato l’apertura dell’azienda nei confronti di mercati mai affrontati fino ad allora.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">1980</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <div class="history_main__text">
+                        <p>Negli anni ’80 s’inaugura la divisione Contract le cui competenze specifiche consentiranno la realizzazione di progetti prestigiosi in tutto il mondo. È la volta di arredamenti lounge, di suite per alberghi a 5 stelle, di ambasciate straniere, di strutture ricettive in Africa e di complessi residenziali dove gli arredi Turri vengono scelti per l’altissimo livello e la qualità delle finiture e dei materiali. C’è una forte correlazione fra il successo della produzione di Turri e la sua apertura a livello internazionale: questi due fattori si potenziano e si rafforzano reciprocamente. Allo stesso tempo, la dimensione fortemente cosmopolita della società ha contribuito alla creazione di idee stimolanti e innovative.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">1996</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <picture class="history_main__pic">
+                        <source srcset="images/history/3.jpg.webp" type="image/webp">
+                        <source srcset="images/history/3.jpg" type="image/jpeg"><img class="history_main__img" src="images/history/3.jpg" alt=" " loading="eager">
+                      </picture>
+                      <div class="history_main__text">
+                        <p>I mercati esteri arrivano a rappresentare il 90% delle vendite, grazie a una continua evoluzione della produzione di mobili, delle tecniche di gestione dei contratti e del richiamo costante suscitato da prodotti della tradizione classica che hanno reso possibile l’esportazione in quasi tutti i paesi del mondo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">2009</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <div class="history_main__text">
+                        <p>Con il passaggio del testimone ad Andrea Turri l’Azienda manifatturiera brianzola specializzata nella produzione di mobili “in stile”, si trasforma ben presto in Azienda globale leader nella creazione di arredi di alta gamma dalle linee contemporanee e dai dettagli glamour, pensati per una clientela cosmopolita. La quota dell’export, 99% del fatturato, ne è una conferma concreta. Si decide quindi di aprire ad est partendo dal mercato russo, dove il Brand si afferma in tempi brevissimi come eccellenza del lusso italiano. È Poi la volta della Cina e di tutto il territorio asiatico, dove il successo è così straordinario da diventare una delle marche italiane più apprezzate e riconosciute.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">2013</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <picture class="history_main__pic">
+                        <source srcset="images/history/4.jpg.webp" type="image/webp">
+                        <source srcset="images/history/4.jpg" type="image/jpeg"><img class="history_main__img" src="images/history/4.jpg" alt=" " loading="eager">
+                      </picture>
+                      <div class="history_main__text">
+                        <p>Il 2013 è un anno decisivo per Turri che crede sempre di più nella forza e nella stabilità del proprio Brand investendo ancora. Un nuovo impianto produttivo di 20.000 mq viene attivato a Briosco, una struttura che permette all’Azienda di aumentare la sua capacità produttiva, mantenendo l’ormai consolidata top quality. Grazie alla migliore organizzazione, unita a una più efficiente logistica, Turri è in grado di avvicinarsi sempre di più alle esigenze della clientela, garantendo un servizio di eccellenza a tutti i suoi clienti.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">2015</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <picture class="history_main__pic">
+                        <source srcset="images/history/5.jpg.webp" type="image/webp">
+                        <source srcset="images/history/5.jpg" type="image/jpeg"><img class="history_main__img" src="images/history/5.jpg" alt=" " loading="eager">
+                      </picture>
+                      <div class="history_main__text">
+                        <p>Turri ha come politica il continuo investimento su risorse e progetti dalle ampie prospettive di crescita, per questo nel 2015, anno del novantesimo anniversario di fondazione, Turri apre un nuovo flagship store a Milano, in via Borgospesso 11, all’interno del quadrilatero del lusso e della moda: un negozio che vuole essere un riferimento unico per la clientela internazionale a Milano.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">2019</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <picture class="history_main__pic">
+                        <source srcset="images/history/6.jpg.webp" type="image/webp">
+                        <source srcset="images/history/6.jpg" type="image/jpeg"><img class="history_main__img" src="images/history/6.jpg" alt=" " loading="eager">
+                      </picture>
+                      <div class="history_main__text">
+                        <p>Riconosciuta a livello internazionale per la sua produzione di collezioni di arredo di grande lusso, Turri persegue la sua mission aziendale e nel 2019 apre uno showroom monomarca in un contesto di grande valore come quello del Design Centre, Chelsea Harbour di Londra, che rappresenta un saldo punto di riferimento per la cultura del design inglese ed europea.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">Oggi</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <div class="history_main__text">
+                        <p>Cambiano i tempi e cambiano le strategie, come naturale risposta all’inevitabile evoluzione del mercato globale e della sensibilità dei suoi consumatori. Cambiano anche le strategie di Turri: ottenuti il prestigio e la posizione di leading sul territorio internazionale per originalità, unicità e qualità, l’Azienda è pronta a una nuova sfida, approcciando mercati finora inesplorati. Una grande operazione imprenditoriale che vedrà cambiare nel corso dei prossimi anni il tessuto aziendale verso un’identità più contemporanea, destinata a un nuovo target, con un differente approccio al prodotto, un marketing più evoluto e nuovo modello di comunicazione.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history_main__item js-fade-item">
+                <div class="history_main__item_in">
+                  <div class="history_main__year">Domani</div>
+                  <div class="history_main__content">
+                    <div class="history_main__content_in">
+                      <div class="history_main__text">
+                        <p>La Turri di domani è già avviata, pronta per sorprendere come tutte le cose straordinarie e al tempo stesso inattese. Ne parliamo con Andrea Turri, l’imprenditore che ha voluto dare un segnale al mondo dell’interior design.</p>
+                      </div><a class="btn_v2" href="#">Leggi l’intervista</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__in">
+          <div class="footer__wrap">
+            <div class="footer__logo"><a class="footer_menu__link" href="#">Turri Srl</a></div>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <div class="footer_menu js-footer-select">
+                    <h4 class="footer_menu__title js-footer-title">Sede e uffici
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list">
+                        <li class="footer_menu__item">
+                          <div class="footer_menu__adress">Via U. Foscolo 6<br>22060 Carugo (CO) <br>Italia</div>
+                        </li>
+                        <li class="footer_menu__item"><a class="footer_menu__link" href="tel:39031760111">T +39 031.760111</a></li>
+                        <li class="footer_menu__item"><a class="footer_menu__link" href="mailto:info@turri.it">info@turri.it</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <div class="footer_menu js-footer-select">
+                    <h4 class="footer_menu__title js-footer-title">Unità produttiva
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list">
+                        <li class="footer_menu__item">
+                          <div class="footer_menu__adress">Via 2 Giugno<br> 20836 Briosco (MB)) <br>Italia</div>
+                        </li>
+                        <li class="footer_menu__item footer_menu__item--mt_mod"><a class="footer_menu__link" href="#">Google Maps</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <ul class="footer_menu__list ">
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Download</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Press Area</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Richiesta informazioni</a>
+                    </li>
+                  </ul>
+                  <ul class="footer_menu__list ">
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="cookie-policy.html">Cookie policy</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Privacy policy</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <div class="footer_menu footer_menu--desctop_mod">
+                    <ul class="footer_menu__list ">
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Italiano</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Inglese</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Spagnolo</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Francese</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Tedesco</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Russo</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Cinese</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer_menu footer_menu--mob_mod js-footer-select">
+                    <h4 class="footer_menu__title footer_menu__title--mob_mod js-footer-title">Italiano
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list ">
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Inglese</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Spagnolo</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Francese</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Tedesco</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Russo</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Cinese</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__social">
+              <ul class="footer__social_list">
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_facebook icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_instagram icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_pinterest icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_youtube icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__info">
+              <h6 class="footer__info__title">Newsletter</h6>
+              <div class="footer__info__text">
+                <p>Ricevi settimanalmente le ultime notizie e tendenze.</p>
+              </div>
+              <form class="footer__form">
+                <div class="footer__form_input">
+                  <div class="form_input">
+                    <div class="form_input__field">
+                      <input class="form_input_email" type="email" id="footer_email" placeholder="Email *" name="footer_email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__form_in">
+                  <div class="footer__form_checkbox">
+                    <div class="form_checkbox">
+                      <label class="form_checkbox__block">
+                        <input class="form_checkbox__element" type="checkbox"><span class="form_checkbox__label">Ho letto e acceto la Politica sulla privacy.</span>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="footer__form__btn btn_v3" type="submit" aria-label="email">Invia</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2022 Turri Srl – C.F./P.IVA 03084350135</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button class="fixed_btn js-fixed-email-btn fixed_btn--desktop_mod" type="button" data-popup-trigger="contact_info_popup"><span class="fixed_btn__icon">
+        <svg class="icon icon_mail icon--size_mod">
+          <use xlink:href="images/sprite/sprite.svg#mail"></use>
+        </svg></span><span class="fixed_btn__text">Richiedi info</span></button>
+    <div class="popup js-popup popup--form_mod" data-popup-id="contact_info_popup">
+      <div class="popup__in js-popup-in">
+        <button class="popup__close js-popup-close" type="button" aria-label="close"></button>
+        <div class="popup__head"> 
+          <h3 class="popup__title">Richiesta informazioni</h3>
+        </div>
+        <form class="contact_form js-contact-form" action="#" data-form-modal="contact_info_thanks">
+          <ul class="contact_form__inputs_list">
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="contact_form_field">
+                  <input class="contact_form_input" type="text" id="contact_form_name" placeholder="Nome e cognome *" name="name" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_agency" placeholder="Azienda *" name="agency" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="tel" id="contact_form_tel" placeholder="Recapito telefonico *" name="telephone" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_select">
+                <div class="form_select__field">
+                  <select class="js-select-element" id="contact_form_nation" placeholder="Nazione" name="nation">
+                    <option value="Placeholder">Nazione</option>
+                    <option value="Item 1">item1</option>
+                    <option value="Item 2">item2</option>
+                    <option value="Item 3">item3</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_city" placeholder="Città *" name="city" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="email" id="contact_form_email" placeholder="Email *" name="email" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_select">
+                <div class="form_select__field">
+                  <select class="js-select-element" id="contact_form_usertype" placeholder="Tipologia di utente *" name="object" required>
+                    <option value="Placeholder">Tipologia di utente *</option>
+                    <option value="Item 1">item1</option>
+                    <option value="Item 2">item2</option>
+                    <option value="Item 3">item3</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_object" placeholder="Oggetto" name="object">
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_textarea">
+                <div class="form_textarea__field">
+                  <textarea class="form_textarea__element" placeholder="Messaggio" name="message"></textarea>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="contact_form__checkboxes">
+            <li class="contact_form__checkboxes_item">
+              <div class="form_checkbox">
+                <label class="form_checkbox__block">
+                  <input class="form_checkbox__element" type="checkbox" name="contact_form_privacy_btns"><span class="contact_form__checkbox_label_decor"></span><span class="contact_form__checkbox_label">Dichiaro di aver preso visione dell’Informativa Privacy Turri srl ai sensi dell’art. 13 del Regolamento (EU) 2016/679 (GDPR) *</span>
+                </label>
+              </div>
+            </li>
+            <li class="contact_form__checkboxes_item">
+              <div class="form_checkbox">
+                <label class="form_checkbox__block">
+                  <input class="form_checkbox__element" type="checkbox" name="contact_form_privacy_btns"><span class="contact_form__checkbox_label_decor"></span><span class="contact_form__checkbox_label">Autorizzo il trattamento dei miei dati personali per la finalità ricezione di newsletter e finalità di marketing commerciale</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <div class="contact_form__descr">I dati contrassegnati da * sono obbligatori per poter inoltrare la richiesta di informazioni</div>
+          <div class="contact_form__btn_block">
+            <button class="contact_form__btn btn_v2" type="submit">Invia la tua richiesta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup-id="contact_info_thanks">
+      <div class="popup__in js-popup-in">
+        <button class="popup__close js-popup-close" type="button" aria-label="close"></button>
+        <div class="popup__head"> 
+          <h3 class="popup__title">Grazie per averci contattato</h3>
+        </div>
+        <div class="popup__text_content">
+          <p>La tua richiesta è stata inoltrata correttamente e sarà presa in carico il prima possibile.</p>
+          <p>Per continuare la navigazione, clicca sul pulsante chiudi o ritorna alla home.</p>
+        </div>
+        <div class="popup__btn_block"><a class="popup__btn btn_v2" href="index.html">Torna alla home</a></div>
+      </div>
+    </div>
+  <script defer src="js/app.js"></script></body>
+</html>

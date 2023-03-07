@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="single-collection">
+  <head>
+    <meta charset="UTF-8">
+    <title>Single Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+  <link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header">
+      <div class="header_in section_in"><a class="header_logo" href="#"><img class="header_logo__img" src="images/logo.svg" alt="logo"></a>
+        <div class="nav">
+          <div class="nav__block_wrap">
+            <div class="nav__block">
+              <ul class="main_menu__list ">
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Collezioni</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Prodotti</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Divani</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Poltroncine</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Contenitori giorno</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Tavoli</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Sedie</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Tavolini</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Letti</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Complementi notte</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Panchette e Pouf</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Consolle</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Accessori</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Illuminazione</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Ufficio</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Vedi tutti</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Vedi tutti</a></div>
+                  </div>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Designer</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Lifestyle</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Contract</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Servizi</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Progetti</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Residenziale</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Retail</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Hospitality</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Spazi pubblici</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Uffici</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Vedi tutti</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Vedi tutti</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__block">
+              <ul class="main_menu__list ">
+                <li class="main_menu__item  "><a class="main_menu__link  main_menu__link--submenu_mod js-submenu-trigger" href="#">Azienda</a>
+                  <div class="submenu">
+                    <div class="submenu__list_wrap">
+                      <div class="submenu__list">
+                        <div class="submenu__item"><a class="submenu__link" href="#">Know-how</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Sostenibilità</a></div>
+                        <div class="submenu__item"><a class="submenu__link" href="#">Storia</a></div>
+                        <div class="submenu__item submenu__item--btn_mod"><a class="submenu__link" href="#">Turri Design</a></div>
+                      </div>
+                    </div>
+                    <div class="submenu__btn_wrap"><a class="btn_v5" href="#">Turri Design</a></div>
+                  </div>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">News</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Store</a>
+                </li>
+                <li class="main_menu__item  "><a class="main_menu__link  " href="#">Contatti </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav__bottom">
+            <div class="nav__menu_wrap">
+              <ul class="nav__menu">
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Download</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Press Area</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link" href="#">Richiesta informazioni</a>
+                </li>
+                <li class="nav__menu_item"><a class="nav__menu_link nav__menu_link--list_mod js-mobile-nav-link" href="#">Italiano</a>
+                  <div class="nav__menu_submenu">
+                    <div class="nav__menu_submenu_item"><a class="nav__menu_submenu_link" href="#">English</a></div>
+                    <div class="nav__menu_submenu_item"><a class="nav__menu_submenu_link" href="#">French</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="nav__social">
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_facebook icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_instagram icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_pinterest icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+                  </svg></a></li>
+              <li class="nav__social_item"><a class="nav__social__link" href="#">
+                  <svg class="icon icon_youtube icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_links">
+          <div class="header_links__item"><a class="header_links__el header_links__el--favourite_mod" href="#">
+              <svg class="icon icon_favourite icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#favourite"></use>
+              </svg></a></div>
+          <div class="header_links__item"><a class="header_links__el js-search-trigger" href="#">
+              <svg class="icon icon_search icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#search"></use>
+              </svg></a></div>
+        </div>
+        <div class="menu_trigger js-menu-trigger"><span class="menu_trigger_decor"></span></div>
+        <div class="header_search js-header-search">
+          <form class="header_search__form" action="">
+            <div class="form_input">
+              <div class="form_input__field">
+                <input class="form_input__element" type="" id="header_search" placeholder="Cerca" value="">
+              </div>
+            </div>
+            <button class="header_search__submit js-search-close">
+              <svg class="icon icon_close icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__in">
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="#">Home</a>
+                <div class="breadcrumbs_icon">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="#">Collezioni</a>
+                <div class="breadcrumbs_icon">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="breadcrumbs_item"><span class="breadcrumbs_link breadcrumbs_link--current_mod">Roma Collections</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="section hero_v2 hero_v2--indent_mod">
+          <div class="section_in hero_v2__in">
+            <div class="rich_text">
+              <h1 class="rich_text__title">Roma Collection <br> design by Monica Armani</h1>
+              <div class="rich_text__text">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <picture class="hero_v2__pic">
+            <source media="(min-width: 640px)" srcset="images/hero/hero_collection.jpg.webp" type="image/webp">
+            <source media="(min-width: 640px)" srcset="images/hero/hero_collection.jpg" type="image/jpeg">
+            <source media="(max-width: 639px)" srcset="images/hero/hero_collection_mob.jpg.webp" type="image/webp">
+            <source media="(max-width: 639px)" srcset="images/hero/hero_collection_mob.jpg" type="image/jpeg"><img class="hero_v2__img" src="images/hero/hero_collection.jpg" alt=" " loading="eager" data-speed="auto">
+          </picture>
+        </section>
+        <section class="section collection js-slider-section">
+          <div class="section_in">
+            <div class="collection__head">
+              <figure>
+                <blockquote cite="#">
+                  <p>“Linee dritte e tonde si rincorrono, collegandosi per creare oggetti unici nati dall’unione di memoria storica e contemporaneità”</p>
+                </blockquote>
+                <figcaption>Monica Armani</figcaption>
+              </figure>
+            </div>
+                    <div class="product__info">
+                      <div class="product__col">
+                        <div class="product__picture_wrap js-fade-item"><a class="product__picture" href="#">
+                            <picture class="product__img_in">
+                              <source media="(max-width: 639px)" srcset="images/collection/01.jpg.webp" type="image/webp">
+                              <source media="(max-width: 639px)" srcset="images/collection/01.jpg" type="image/jpeg"><img class="product__img" src="images/collection/01.jpg" alt=" " loading="eager">
+                            </picture></a><a class="product__img_name" href="#">Roma Sofa</a>
+                        </div>
+                        <div class="product__text">
+                          <p>Turri ha creato un fil rouge trasversale di tendenze abbracciando uno stile contemporaneo, poiché cerca sempre più di rispondere alle esigenze delle giovani generazioni.</p>
+                          <p>La collaborazione del marchio con Monica Armani ha dato vita e un tocco internazionale alla nuova capsule collection di Turri, Roma, che trova un equilibrio ideale tra estetica, innovazione, tecnologia e tradizione.</p>
+                        </div>
+                      </div>
+                      <div class="product__col">
+                        <div class="product__picture_wrap js-fade-item"><a class="product__picture" href="#">
+                            <picture class="product__img_in">
+                              <source media="(max-width: 639px)" srcset="images/collection/02.jpg.webp" type="image/webp">
+                              <source media="(max-width: 639px)" srcset="images/collection/02.jpg" type="image/jpeg"><img class="product__img" src="images/collection/02.jpg" alt=" " loading="eager">
+                            </picture></a><a class="product__img_name" href="#">Roma Sofa</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="slider__slider js-slider-slider">
+                        <div class="slider__controls">
+                          <button class="slider__btn slider__btn--prev_mod js-slider-prev-button" type="button" aria-label="Prev slide">
+                            <svg class="icon icon_arrow_prev icon--size_mod">
+                              <use xlink:href="images/sprite/sprite.svg#arrow_prev"></use>
+                            </svg>
+                          </button>
+                          <button class="slider__btn slider__btn--next_mod js-slider-next-button" type="button" aria-label="Next slide">
+                            <svg class="icon icon_arrow_next icon--size_mod">
+                              <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="slider__pagination js-slider-pagination"></div>
+                        <ul class="slider__list swiper-wrapper">
+                          <li class="slider__item swiper-slide">
+                            <div class="slider__item_img_in">
+                              <picture class="slider__item_pic">
+                                <source media="(max-width: 639px)" srcset="images/collection/03.jpg.webp" type="image/webp">
+                                <source media="(max-width: 639px)" srcset="images/collection/03.jpg" type="image/jpeg"><img class="slider__item_img" src="images/collection/03.jpg" alt=" " loading="eager">
+                              </picture>
+                            </div>
+                            <div class="slider__img_in"><a class="slider__img_name" href="#">Poltroncina, Pouf, Tavolino laterale, Credenza</a></div>
+                          </li>
+                          <li class="slider__item swiper-slide">
+                            <div class="slider__item_img_in">
+                              <picture class="slider__item_pic">
+                                <source media="(max-width: 639px)" srcset="images/collection/02.jpg.webp" type="image/webp">
+                                <source media="(max-width: 639px)" srcset="images/collection/02.jpg" type="image/jpeg"><img class="slider__item_img" src="images/collection/02.jpg" alt=" " loading="eager">
+                              </picture>
+                            </div>
+                            <div class="slider__img_in"><a class="slider__img_name" href="#">Roma Sofa</a></div>
+                          </li>
+                          <li class="slider__item swiper-slide">
+                            <div class="slider__item_img_in">
+                              <picture class="slider__item_pic">
+                                <source media="(max-width: 639px)" srcset="images/collection/01.jpg.webp" type="image/webp">
+                                <source media="(max-width: 639px)" srcset="images/collection/01.jpg" type="image/jpeg"><img class="slider__item_img" src="images/collection/01.jpg" alt=" " loading="eager">
+                              </picture>
+                            </div>
+                            <div class="slider__img_in"><a class="slider__img_name" href="#">Roma Sofa</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+          </div>
+        </section>
+        <section class="section about_section">
+          <div class="section_in">
+                    <div class="section_head section_head--sm_mod">
+                      <h3 class="section_head__title">Turri + Monica Armani</h3>
+                    </div>
+            <div class="about_section__wrap">
+              <div class="about_section__text">
+                <p>Cerca sempre l’essenza del segno. Le linee e le geometrie non si sovraccaricano di elementi ma trovano un punto di equilibrio tra memoria degli anni e gusto contemporaneo.</p>
+                <p>Progetti curati in ogni singolo dettaglio dal team dello Studio, che non si limita al solo design dell’oggetto, ma ne propone spesso diverse funzioni d’uso, introducendo nuove tecniche e materiali e, in alcune occasioni, seguendone tutti gli aspetti dello sviluppo, in un concetto totale di service design.</p>
+                <p>Ripercorrendo i passi dei grandi maestri, lo Studio Monica Armani ha scelto di dedicarsi con attenzione anche all’architettura temporanea, ritenendola una risposta concreta e consapevole alle esigenze di sostenibilità del nostro tempo.</p>
+              </div>
+              <picture class="about_section__img_in">
+                <source media="(max-width: 639px)" srcset="images/about.jpg.webp" type="image/webp">
+                <source media="(max-width: 639px)" srcset="images/about.jpg" type="image/jpeg"><img class="about_section__img" src="images/about.jpg" alt=" " loading="eager">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="section products__section">
+          <div class="section_in">
+                    <div class="section_head section_head--sm_mod">
+                      <h3 class="section_head__title">Prodotti</h3>
+                    </div>
+            <div class="mobile_slider products__list_wrap products__list_wrap--slider_mod js-mobile-slider-wrap">
+              <div class="mobile_slider__controls mobile_slider__controls--dark_mod">
+                <div class="mobile_slider__controls_item mobile_slider__controls_item--prev_mod js-mobile-slider-prev">
+                  <svg class="icon icon_arrow_prev icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_prev"></use>
+                  </svg>
+                </div>
+                <div class="mobile_slider__controls_item mobile_slider__controls_item--next_mod js-mobile-slider-next">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="products__list products__list--v2_mod js-products-slider">
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_22.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_22.png" type="image/png"><img class="products__img" src="images/products/products_22.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Beauty</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_2.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_2.png" type="image/png"><img class="products__img" src="images/products/products_2.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Comò</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_23.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_23.png" type="image/png"><img class="products__img" src="images/products/products_23.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Comodino</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_24.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_24.png" type="image/png"><img class="products__img" src="images/products/products_24.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Credenza</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_17.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_17.png" type="image/png"><img class="products__img" src="images/products/products_17.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Etagere</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_1.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_1.png" type="image/png"><img class="products__img" src="images/products/products_1.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Letto</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_3.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_3.png" type="image/png"><img class="products__img" src="images/products/products_3.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Oggetti</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_8.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_8.png" type="image/png"><img class="products__img" src="images/products/products_8.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Poltroncina</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_9.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_9.png" type="image/png"><img class="products__img" src="images/products/products_9.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Pouf</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_10.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_10.png" type="image/png"><img class="products__img" src="images/products/products_10.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Sedia</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_11.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_11.png" type="image/png"><img class="products__img" src="images/products/products_11.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Tavolino laterale </h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_12.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_12.png" type="image/png"><img class="products__img" src="images/products/products_12.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Tavolino laterale</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_4.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_4.png" type="image/png"><img class="products__img" src="images/products/products_4.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Tavolo rettangolare</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_5.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_5.png" type="image/png"><img class="products__img" src="images/products/products_5.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Tavolo rettangolare</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_6.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_6.png" type="image/png"><img class="products__img" src="images/products/products_6.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Tavolo rotondo</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_16.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_16.png" type="image/png"><img class="products__img" src="images/products/products_16.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Vetrina</h4></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section lifestyle_section">
+          <div class="section_in">
+                    <div class="section_head section_head--sm_mod">
+                      <h3 class="section_head__title">Lifestyle</h3>
+                    </div>
+            <div class="mobile_slider js-mobile-slider-wrap">
+              <div class="mobile_slider__controls">
+                <div class="mobile_slider__controls_item mobile_slider__controls_item--prev_mod js-mobile-slider-prev">
+                  <svg class="icon icon_arrow_prev icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_prev"></use>
+                  </svg>
+                </div>
+                <div class="mobile_slider__controls_item mobile_slider__controls_item--next_mod js-mobile-slider-next">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="lifestyle__list js-lifestyle-slider">
+                <div class="lifestyle"><a class="lifestyle__link" href="#">
+                    <picture class="lifestyle__pic">
+                      <source media="(max-width: 639px)" srcset="images/lifestyle_3.jpg.webp" type="image/webp">
+                      <source media="(max-width: 639px)" srcset="images/lifestyle_3.jpg" type="image/jpeg"><img class="lifestyle__img" src="images/lifestyle_3.jpg" alt=" " loading="eager">
+                    </picture>
+                    <div class="lifestyle__title">Classic apartment </div></a></div>
+                <div class="lifestyle"><a class="lifestyle__link" href="#">
+                    <picture class="lifestyle__pic">
+                      <source media="(max-width: 639px)" srcset="images/lifestyle_2.jpg.webp" type="image/webp">
+                      <source media="(max-width: 639px)" srcset="images/lifestyle_2.jpg" type="image/jpeg"><img class="lifestyle__img" src="images/lifestyle_2.jpg" alt=" " loading="eager">
+                    </picture>
+                    <div class="lifestyle__title">Modern house</div></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section download">
+          <div class="section_in">
+                    <div class="section_head section_head--sm_mod">
+                      <h3 class="section_head__title">Download</h3>
+                    </div>
+            <div class="download__wrap">
+              <ul class="download__list">
+                <li class="download__item"><a class="btn_v2" href="#">Catalogo Generale</a>
+                </li>
+                <li class="download__item"><a class="btn_v2" href="#">News 2023</a>
+                </li>
+                <li class="download__item"><a class="btn_v2" href="#">Schede tecniche</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section products__section">
+          <div class="section_in">
+                    <div class="section_head section_head--sm_mod">
+                      <h3 class="section_head__title">Visti di recente</h3>
+                    </div>
+            <div class="products__list_wrap products__list_wrap--slider_mod">
+              <div class="mobile_slider__controls mobile_slider__controls--dark_mod">
+                <div class="mobile_slider__controls_item mobile_slider__controls_item--prev_mod js-products-prev">
+                  <svg class="icon icon_arrow_prev icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_prev"></use>
+                  </svg>
+                </div>
+                <div class="mobile_slider__controls_item mobile_slider__controls_item--next_mod js-products-next">
+                  <svg class="icon icon_arrow_next icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow_next"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="products__list products__list--slider_2_mod products__list--height_2_mod productsSlider">
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_22.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_22.png" type="image/png"><img class="products__img" src="images/products/products_22.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Beauty</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_2.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_2.png" type="image/png"><img class="products__img" src="images/products/products_2.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Comò</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_23.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_23.png" type="image/png"><img class="products__img" src="images/products/products_23.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Comodino</h4></a></div>
+                <div class="products"><a class="products__link" href="#">
+                    <div class="products__pic_wrap">
+                      <picture class="products__pic">
+                        <source media="(max-width: 639px)" srcset="images/products/products_24.png.webp" type="image/webp">
+                        <source media="(max-width: 639px)" srcset="images/products/products_24.png" type="image/png"><img class="products__img" src="images/products/products_24.png" alt=" " loading="eager">
+                      </picture>
+                    </div>
+                    <h4 class="products__title">Credenza</h4></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__in">
+          <div class="footer__wrap">
+            <div class="footer__logo"><a class="footer_menu__link" href="#">Turri Srl</a></div>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <div class="footer_menu js-footer-select">
+                    <h4 class="footer_menu__title js-footer-title">Sede e uffici
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list">
+                        <li class="footer_menu__item">
+                          <div class="footer_menu__adress">Via U. Foscolo 6<br>22060 Carugo (CO) <br>Italia</div>
+                        </li>
+                        <li class="footer_menu__item"><a class="footer_menu__link" href="tel:39031760111">T +39 031.760111</a></li>
+                        <li class="footer_menu__item"><a class="footer_menu__link" href="mailto:info@turri.it">info@turri.it</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <div class="footer_menu js-footer-select">
+                    <h4 class="footer_menu__title js-footer-title">Unità produttiva
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list">
+                        <li class="footer_menu__item">
+                          <div class="footer_menu__adress">Via 2 Giugno<br> 20836 Briosco (MB)) <br>Italia</div>
+                        </li>
+                        <li class="footer_menu__item footer_menu__item--mt_mod"><a class="footer_menu__link" href="#">Google Maps</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <ul class="footer_menu__list ">
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Download</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Press Area</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Richiesta informazioni</a>
+                    </li>
+                  </ul>
+                  <ul class="footer_menu__list ">
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="cookie-policy.html">Cookie policy</a>
+                    </li>
+                    <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Privacy policy</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <div class="footer_menu footer_menu--desctop_mod">
+                    <ul class="footer_menu__list ">
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Italiano</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Inglese</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Spagnolo</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Francese</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Tedesco</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Russo</a>
+                      </li>
+                      <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Cinese</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer_menu footer_menu--mob_mod js-footer-select">
+                    <h4 class="footer_menu__title footer_menu__title--mob_mod js-footer-title">Italiano
+                      <div class="footer_menu__title_arrow">
+                        <svg class="icon icon_arrow_footer icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#arrow_footer"></use>
+                        </svg>
+                      </div>
+                    </h4>
+                    <div class="footer_menu__wrap js-footer-menu">
+                      <ul class="footer_menu__list ">
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Inglese</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Spagnolo</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Francese</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Tedesco</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Russo</a>
+                        </li>
+                        <li class="footer_menu__item  "><a class="footer_menu__link  " href="#">Cinese</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__social">
+              <ul class="footer__social_list">
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_facebook icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_instagram icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_pinterest icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+                    </svg></a></li>
+                <li class="footer__social_item"><a class="footer__social_link" href="#">
+                    <svg class="icon icon_youtube icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__info">
+              <h6 class="footer__info__title">Newsletter</h6>
+              <div class="footer__info__text">
+                <p>Ricevi settimanalmente le ultime notizie e tendenze.</p>
+              </div>
+              <form class="footer__form">
+                <div class="footer__form_input">
+                  <div class="form_input">
+                    <div class="form_input__field">
+                      <input class="form_input_email" type="email" id="footer_email" placeholder="Email *" name="footer_email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__form_in">
+                  <div class="footer__form_checkbox">
+                    <div class="form_checkbox">
+                      <label class="form_checkbox__block">
+                        <input class="form_checkbox__element" type="checkbox"><span class="form_checkbox__label">Ho letto e acceto la Politica sulla privacy.</span>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="footer__form__btn btn_v3" type="submit" aria-label="email">Invia</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2022 Turri Srl – C.F./P.IVA 03084350135</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button class="fixed_btn js-fixed-email-btn fixed_btn--desktop_mod" type="button" data-popup-trigger="contact_info_popup"><span class="fixed_btn__icon">
+        <svg class="icon icon_mail icon--size_mod">
+          <use xlink:href="images/sprite/sprite.svg#mail"></use>
+        </svg></span><span class="fixed_btn__text">Richiedi info</span></button>
+    <div class="popup js-popup popup--form_mod" data-popup-id="contact_info_popup">
+      <div class="popup__in js-popup-in">
+        <button class="popup__close js-popup-close" type="button" aria-label="close"></button>
+        <div class="popup__head"> 
+          <h3 class="popup__title">Richiesta informazioni</h3>
+        </div>
+        <form class="contact_form js-contact-form" action="#" data-form-modal="contact_info_thanks">
+          <ul class="contact_form__inputs_list">
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="contact_form_field">
+                  <input class="contact_form_input" type="text" id="contact_form_name" placeholder="Nome e cognome *" name="name" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_agency" placeholder="Azienda *" name="agency" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="tel" id="contact_form_tel" placeholder="Recapito telefonico *" name="telephone" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_select">
+                <div class="form_select__field">
+                  <select class="js-select-element" id="contact_form_nation" placeholder="Nazione" name="nation">
+                    <option value="Placeholder">Nazione</option>
+                    <option value="Item 1">item1</option>
+                    <option value="Item 2">item2</option>
+                    <option value="Item 3">item3</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_city" placeholder="Città *" name="city" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="email" id="contact_form_email" placeholder="Email *" name="email" required>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_select">
+                <div class="form_select__field">
+                  <select class="js-select-element" id="contact_form_usertype" placeholder="Tipologia di utente *" name="object" required>
+                    <option value="Placeholder">Tipologia di utente *</option>
+                    <option value="Item 1">item1</option>
+                    <option value="Item 2">item2</option>
+                    <option value="Item 3">item3</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_input">
+                <div class="form_input__field">
+                  <input class="contact_form_input" type="text" id="contact_form_object" placeholder="Oggetto" name="object">
+                </div>
+              </div>
+            </li>
+            <li class="contact_form__inputs_item">
+              <div class="form_textarea">
+                <div class="form_textarea__field">
+                  <textarea class="form_textarea__element" placeholder="Messaggio" name="message"></textarea>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="contact_form__checkboxes">
+            <li class="contact_form__checkboxes_item">
+              <div class="form_checkbox">
+                <label class="form_checkbox__block">
+                  <input class="form_checkbox__element" type="checkbox" name="contact_form_privacy_btns"><span class="contact_form__checkbox_label_decor"></span><span class="contact_form__checkbox_label">Dichiaro di aver preso visione dell’Informativa Privacy Turri srl ai sensi dell’art. 13 del Regolamento (EU) 2016/679 (GDPR) *</span>
+                </label>
+              </div>
+            </li>
+            <li class="contact_form__checkboxes_item">
+              <div class="form_checkbox">
+                <label class="form_checkbox__block">
+                  <input class="form_checkbox__element" type="checkbox" name="contact_form_privacy_btns"><span class="contact_form__checkbox_label_decor"></span><span class="contact_form__checkbox_label">Autorizzo il trattamento dei miei dati personali per la finalità ricezione di newsletter e finalità di marketing commerciale</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <div class="contact_form__descr">I dati contrassegnati da * sono obbligatori per poter inoltrare la richiesta di informazioni</div>
+          <div class="contact_form__btn_block">
+            <button class="contact_form__btn btn_v2" type="submit">Invia la tua richiesta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup-id="contact_info_thanks">
+      <div class="popup__in js-popup-in">
+        <button class="popup__close js-popup-close" type="button" aria-label="close"></button>
+        <div class="popup__head"> 
+          <h3 class="popup__title">Grazie per averci contattato</h3>
+        </div>
+        <div class="popup__text_content">
+          <p>La tua richiesta è stata inoltrata correttamente e sarà presa in carico il prima possibile.</p>
+          <p>Per continuare la navigazione, clicca sul pulsante chiudi o ritorna alla home.</p>
+        </div>
+        <div class="popup__btn_block"><a class="popup__btn btn_v2" href="index.html">Torna alla home</a></div>
+      </div>
+    </div>
+  <script defer src="js/app.js"></script></body>
+</html>
